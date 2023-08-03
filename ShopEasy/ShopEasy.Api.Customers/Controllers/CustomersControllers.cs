@@ -30,7 +30,7 @@ namespace ShopEasy.Api.Customers.Controllers
             var result = await customersProvider.GetCustomerAsync(id);
             if (result.IsSuccess)
             {
-                return Ok(result.Customers);
+                return Ok(result.Customer);
             }
             return NotFound();
         }
